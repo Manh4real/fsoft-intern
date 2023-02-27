@@ -1,0 +1,121 @@
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header,
+section,
+aside,
+nav,
+footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header,
+footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+
+@font-face {
+  font-family: 'body font';
+  src: url('./fonts/Lovato-Light-webfont.ttf');
+}
+@font-face {
+  font-family: 'heading font';
+  src: url('./fonts/josefinslab-bold-webfont.ttf');
+}
+
+:root {
+  font-size: 10px;
+}
+body {
+  font-family: 'body font';
+  font-size: 1.6em;
+  line-height: 1.4;
+  letter-spacing: 0.8px;
+  word-spacing: 3px;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'heading font';
+  letter-spacing: 1px;
+}
+header h1 {
+  text-align: center;
+}
+section h2 + p {
+  text-indent: 20px;
+}
+a, a:visited, a:focus, a:hover {
+  color: #a66;
+}
+a:focus, a:hover {
+  text-decoration: none;
+}
+a:focus {
+  outline: none;
+}
+a:active {
+  color: #a99;
+}
+a[href^='http']::after {
+  content: '🔗';
+  text-decoration: none;
+}
+li {
+  line-height: inherit;
+}
+
+ul {
+  list-style-type: circle;
+}
+ol {
+  list-style-type: lower-alpha;
+}
+
+nav li {
+  list-style: none;
+  border: 1px solid #a66;
+  border-radius: 2px;
+  margin-bottom: 15px;
+}
+nav li a{
+  text-align: center;
+  font-weight: bold;
+  display: block;
+  text-decoration: none;
+  padding: 20px;
+  font-size: 1.1em;
+}

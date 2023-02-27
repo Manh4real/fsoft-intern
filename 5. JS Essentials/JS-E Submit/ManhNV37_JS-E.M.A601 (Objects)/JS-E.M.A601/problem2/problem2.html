@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Object basics: Task 2</title>
+    <style>
+      p {
+        color: purple;
+        margin: 0.5em 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+
+    <section class="preview">
+
+
+
+    </section>
+
+  </body>
+  <script>
+    let info;
+
+    // Add your code here
+    const artist = {
+      name: "J. Cole",
+      nationality: "the U.S",
+      genre: "Rap",
+      debut: 2007,
+      songs: [
+        { name: "MIDDLE CHILD", released: 2019 },
+        { name: "Neighbors", released: 2016 },
+        { name: "The Climb Back", released: 2020 },
+      ]
+    }
+
+    info = `My favorite artist so far is ${artist.name}, from ${artist.nationality}. His first debut mixtape was in ${artist.debut}. His genre is ${artist.genre}. My favorite song of him is ${artist.songs[0].name}, released in ${artist.songs[0].released}.`;
+
+    // Don't edit the code below here!
+
+    const section = document.querySelector('section');
+    let para1 = document.createElement('p');
+    para1.textContent = info;
+    section.appendChild(para1);
+  </script>
+
+</html>

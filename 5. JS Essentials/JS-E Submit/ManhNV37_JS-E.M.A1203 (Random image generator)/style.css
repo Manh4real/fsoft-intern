@@ -1,0 +1,40 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	text-align: center;
+}
+
+button {
+	cursor: pointer;
+}
+
+.title {
+	margin-top: 3em;
+	margin-bottom: 1em;
+}
+.images {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 1em;
+}
+.image {
+	width: 300px;
+	height: 300px;
+	border: 1px solid #222;
+}
+.image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.gen-button {
+	padding: .5em 2em;
+	margin-top: 2em;
+	border-radius: 100px;
+	border: 1px solid #222;
+}

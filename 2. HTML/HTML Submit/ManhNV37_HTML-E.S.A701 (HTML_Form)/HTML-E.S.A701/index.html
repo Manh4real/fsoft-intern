@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Your first HTML form, styled</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <form>
+        <header class="header">
+          <h1 class="text-center">FA Survey Form</h1>
+          <p class="description text-center">
+            Thank you for taking the time to help us improve the platform
+          </p>
+        </header>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        
+        <!-- Email  -->
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input 
+            type="email"
+            id="email"
+            name="email" 
+            class="form-control"
+            placeholder="Enter your email"
+            required
+            >
+        </div>
+
+        <!-- Age -->
+        <div class="form-group">
+          <label for="email">Age <small>(optional)</small></label>
+          <input 
+            type="text"
+            id="age"
+            name="age" 
+            class="form-control"
+            placeholder="Age"
+            >
+        </div>
+
+        <!-- Current role -->
+        <div class="form-group">
+          <label for="role">Which option describe best your role?</label>
+          <select name="role" id="role" class="form-control">
+            <option value="-1">Select current role</option>
+            <option value="0">Business Owner</option>
+            <option value="1">Entrepreneur</option>
+            <option value="1">Gangster</option>
+          </select>
+        </div>
+
+        <!-- Recommend to friend -->
+        <div class="form-group">
+          <label for="rcm">Would you recommend FA to a friend</label>
+          <label for="rcm-def"><input type="radio" name="rcm" id="rcm-def" class="input-radio" checked>Definitely</label>
+          <label for="rcm-mbe"><input type="radio" name="rcm" id="rcm-mbe" class="input-radio">Maybe</label>
+          <label for="rcm-nsr"><input type="radio" name="rcm" id="rcm-nsr" class="input-radio">Not sure</label>
+        </div>
+
+        <!-- What would you like to see improved -->
+        <div class="form-group">
+          <label for="improve">Would you recommend FA to a friend</label>
+          <label for="improve-FE"><input type="checkbox" id="improve-FE" name="improve-FE" class="input-checkbox">Front-end Projects</label>
+          <label for="improve-BE"><input type="checkbox" id="improve-BE" name="improve-BE" class="input-checkbox">Back-end Projects</label>
+          <label for="improve-AI"><input type="checkbox" id="improve-AI" name="improve-AI" class="input-checkbox">AI</label>
+          <label for="improve-ML"><input type="checkbox" id="improve-ML" name="improve-ML" class="input-checkbox">Machine Learning</label>
+          <label for="improve-SS"><input type="checkbox" id="improve-SS" name="improve-SS" class="input-checkbox">Soft Skills</label>
+          <label for="improve-PE"><input type="checkbox" id="improve-PS" name="improve-PS" class="input-checkbox">Presentation Skills</label>
+        </div>
+
+        <!-- Suggestions -->
+        <div class="form-group">
+          <label for="sugg">Any comments or suggestions?</label>
+          <textarea id="sugg" name="suggestion" class="input-textarea" placeholder="Enter your comment here..."></textarea>
+        </div>
+
+        <!-- Submit-button -->
+        <button type="submit" class="submit-button">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
